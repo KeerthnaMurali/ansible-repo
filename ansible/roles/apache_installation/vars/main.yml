@@ -1,0 +1,3 @@
+---
+welcome: "/etc/httpd/conf.d/welcome.conf"
+package: "httpd"

@@ -1,0 +1,19 @@
+node1 ansible_ssh_host=172.31.16.237 ansible_ssh_user=centos ansible_ssh_port=22 ansible_ssh_private_key_file=./mynewansible.ppk
+
+[webserver]
+node1
+
+
+
+[datacenter:children]
+webserver
+dbserver
+
+[webserver:vars]
+
+[dbserver:vars]
+
+[datacenter:vars]
+ansible_ssh_user=centos
+ansible_ssh_port=22
+ansible_ssh_private_key_file=./mynewansible.ppk
